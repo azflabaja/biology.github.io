@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajwa Web - Diskusi Biologi</title>
+    <style>
+        body {
+            background-color: #e0f2e0; /* Hijau lembut */
+            color: #4e3b2e; /* Cokelat gelap */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4e3b2e; /* Cokelat gelap */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #4e3b2e;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4e3b2e;
+            color: white;
+            border-color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #4e3b2e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .discussion-content {
+            display: none; /* Sembunyikan diskusi secara default */
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #4e3b2e;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .active {
+            display: block; /* Tampilkan diskusi yang aktif */
+        }
+        h3 {
+            margin-top: 0;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Rajwa Web</h1>
+    <p>Sumber utama Anda untuk diskusi biologi!</p>
+</header>
+
+<nav>
+    <a id="discussion-1-link">Penemuan Terbaru</a>
+    <a id="discussion-2-link">Isu Etika</a>
+    <a id="discussion-3-link">Strategi Konservasi</a>
+    <a id="discussion-4-link">Ekologi Mikrobiologis</a>
+    <a id="discussion-5-link">Biologi Tumbuhan</a>
+    <a id="discussion-6-link">Perilaku Hewan</a>
+    <a id="discussion-7-link">Anatomi Manusia</a>
+    <a id="discussion-8-link">Genetika dan Warisan</a>
+    <a id="discussion-9-link">Dampak Perubahan Iklim</a>
+    <a id="discussion-10-link">Inovasi Bioteknologi</a>
+</nav>
+
+<section id="discussions">
+    <h2>Diskusi</h2>
+    <div id="discussion-1" class="discussion-content active">
+        <h3>Penemuan Terbaru dalam Biologi</h3>
+        <p>Ayo diskusikan terobosan terbaru dalam penelitian biologi!</p>
+        <p>Kemajuan terbaru dalam genomik, mikrobiologi, dan ekologi telah menghasilkan penemuan signifikan. Misalnya, teknologi CRISPR yang baru merevolusi pengeditan gen, memungkinkan peneliti untuk melakukan perubahan yang tepat pada urutan DNA. Ini membuka kemungkinan baru untuk mengobati kelainan genetik dan meningkatkan tanaman pertanian.</p>
+    </div>
+    <div id="discussion-2" class="discussion-content">
+        <h3>Isu Etika dalam Rekayasa Genetik</h3>
+        <p>Apa pertimbangan etika yang terkait dengan modifikasi genetik?</p>
+        <p>Seiring dengan semakin mudahnya akses teknologi rekayasa genetik seperti CRISPR, muncul kekhawatiran etis tentang penggunaannya. Pertanyaan yang muncul meliputi potensi untuk 'bayi desain', dampak terhadap keanekaragaman hayati, dan risiko konsekuensi yang tidak diinginkan. Penting untuk menetapkan pedoman dan kerangka etika untuk menangani tantangan ini secara bertanggung jawab.</p>
+    </div>
+    <div id="discussion-3" class="discussion-content">
+        <h3>Biologi Konservasi: Strategi dan Pentingnya</h3>
+        <p>Mengapa biologi konservasi sangat penting untuk masa depan planet kita?</p>
+        <p>Biologi konservasi berfokus pada perlindungan keanekaragaman hayati dan ekosistem. Dengan hilangnya habitat, perubahan iklim, dan polusi yang mengancam banyak spesies, strategi konservasi yang efektif sangat penting. Ini mencakup pembentukan area yang dilindungi, pemulihan habitat yang terdegradasi, dan penerapan praktik berkelanjutan untuk menyeimbangkan kebutuhan manusia dengan pelestarian ekologi.</p>
+    </div>
+    <div id="discussion-4" class="discussion-content">
+        <h3>Ekologi Mikrobiologis: Interaksi dan Dampak</h3>
+        <p>Bagaimana mikroba memengaruhi ekosistem dan kesehatan manusia?</p>
+        <p>Mikroba memainkan peran penting dalam siklus nutrisi, penguraian, dan mendukung jaringan makanan. Penelitian terbaru menyoroti pentingnya mikrobioma manusia untuk kesehatan, memengaruhi pencernaan, imunitas, dan bahkan kesejahteraan mental. Memahami interaksi ini dapat mengarah pada hasil kesehatan yang lebih baik dan praktik pengelolaan ekologi.</p>
+    </div>
+    <div id="discussion-5" class="discussion-content">
+        <h3>Memahami Biologi Tumbuhan</h3>
+        <p>Apa proses kunci dalam pertumbuhan dan perkembangan tumbuhan?</p>
+        <p>Biologi tumbuhan mencakup fotosintesis, respirasi, dan penyerapan nutrisi. Memahami proses ini sangat penting untuk meningkatkan hasil tanaman dan mengembangkan praktik pertanian yang berkelanjutan. Inovasi dalam bioteknologi, seperti organisme hasil rekayasa genetik (GMO), bertujuan untuk meningkatkan ketahanan terhadap hama dan stres lingkungan.</p>
+    </div>
+    <div id="discussion-6" class="discussion-content">
+        <h3>Perilaku Hewan: Wawasan dan Penemuan</h3>
+        <p>Apa yang mendorong perilaku berbagai spesies hewan?</p>
+        <p>Studi tentang perilaku hewan membantu kita memahami bagaimana spesies beradaptasi dengan lingkungan mereka. Topik termasuk ritual kawin, strategi mencari makan, dan interaksi sosial. Penelitian tentang kognisi dan komunikasi hewan memberikan wawasan tentang kompleksitas masyarakat hewan dan respons mereka terhadap perubahan lingkungan.</p>
+    </div>
+    <div id="discussion-7" class="discussion-content">
+        <h3>Anatomi Manusia: Struktur dan Fungsi</h3>
+        <p>Bagaimana sistem-sistem dalam tubuh manusia bekerja bersama?</p>
+        <p>Anatomi manusia mempelajari struktur sistem tubuh, termasuk sistem peredaran darah, pernapasan, dan saraf. Memahami interaksi sistem-sistem ini sangat penting untuk ilmu kedokteran, memungkinkan kemajuan dalam pengobatan dan terapi untuk berbagai kondisi, dari penyakit jantung hingga gangguan neurologis.</p>
+    </div>
+    <div id="discussion-8" class="discussion-content">
+        <h3>Genetika dan Warisan: Mengungkap DNA</h3>
+        <p>Apa kemajuan terbaru dalam penelitian genetika?</p>
+        <p>Penelitian genetika telah membuat kemajuan signifikan dengan teknik seperti pengurutan genom lengkap dan pengeditan gen. Kemajuan ini memberikan wawasan tentang penyakit keturunan, evolusi, dan dasar genetik sifat-sifat. Penelitian yang sedang berlangsung terus mengeksplorasi implikasi epigenetik dan interaksi gen-lingkungan.</p>
+    </div>
+    <div id="discussion-9" class="discussion-content">
+        <h3>Dampak Perubahan Iklim terhadap Keanekaragaman Hayati</h3>
+        <p>Bagaimana perubahan iklim memengaruhi ekosistem dan keanekaragaman spesies?</p>
+        <p>Perubahan iklim mengancam keanekaragaman hayati secara serius, memengaruhi distribusi spesies, pola migrasi, dan stabilitas habitat. Memahami dampak ini sangat penting untuk mengembangkan strategi konservasi dan kebijakan yang bertujuan mengurangi efek perubahan iklim dan menjaga integritas ekologis.</p>
+    </div>
+    <div id="discussion-10" class="discussion-content">
+        <h3>Inovasi Bioteknologi dalam Kedokteran</h3>
+        <p>Apa inovasi terbaru dalam bioteknologi untuk kesehatan?</p>
+        <p>Bioteknologi mengubah dunia kedokteran melalui terapi yang dipersonalisasi, terapi gen, dan kedokteran regeneratif. Inovasi seperti pengobatan berbasis CRISPR dan biopharmaceuticals membuka jalan bagi pendekatan baru dalam manajemen penyakit, menawarkan harapan untuk kondisi yang sebelumnya tidak dapat diobati.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Rajwa Web. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+    // Fungsi untuk menampilkan diskusi yang dipilih
+    function showDiscussion(discussionId) {
+        const discussions = document.querySelectorAll('.discussion-content');
+        discussions.forEach((discussion) => discussion.classList.remove('active'));
+        document.getElementById(discussionId).classList.add('active');
+    }
+
+    // Pendengar acara untuk tautan diskusi
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById(`discussion-${i}-link`).addEventListener('click', function() {
+            showDiscussion(`discussion-${i}`);
+        });
+    }
+</script>
+
+</body>
+</html>
